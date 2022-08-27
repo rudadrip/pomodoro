@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Rudradip Ray</title>
+    <script src="timer.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <br>
+    <br>
+    <section class="px-4">
+        <progress class="progress is-large is-danger" max="100"></progress>
+        <progress id="progressBar" class="progress is-large is-danger" value="25" max="100"></progress>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+        <h1 id="time" class="title is-1 has-text-centered">00:00</h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="columns has-text-centered px-3">
+        <div class="column is-centered">
+            <button class="button is-danger is-rounded" onclick="startTime()">Start</button>
+        </div>
+        <div class="column is-centered">
+            <button id="changeName" class="button is-danger is-rounded" onclick="pauseTime()">Pause</button>
+        </div>
+        <div class="column is-centered">
+            <button class="button is-danger is-rounded" onclick="restartTime()">Restart</button>
+        </div>
+        <div class="column is-centered">
+            <button class="button is-danger is-rounded" onclick="endTimer()">Exit</button>
+        </div>
+    </div>
+</body>
+</html>
