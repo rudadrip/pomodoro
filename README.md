@@ -1,5 +1,5 @@
 # pomodoro
-Pomodoro Javascipt Project
+Pomodoro Javascipt Project w/ Bulma
 
 
 # Features to work on
